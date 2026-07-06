@@ -1,0 +1,83 @@
+/* Product Leader — header fuerte, skills por dominio, logros destacados. */
+
+.pdl {
+  --pdl-accent: #4338ca;
+  padding: 14mm 16mm;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  font-size: 9.5pt;
+  line-height: 1.5;
+  color: #1f2430;
+}
+
+.pdl-head {
+  margin-bottom: 6mm;
+  padding-bottom: 4mm;
+  border-bottom: 1mm solid var(--pdl-accent);
+}
+.pdl .rs-header { display: flex; align-items: center; gap: 6mm; }
+.pdl .rs-photo { width: 24mm; height: 24mm; border-radius: 50%; object-fit: cover; }
+.pdl .rs-name { margin: 0; font-size: 20pt; font-weight: 800; letter-spacing: -0.02em; }
+.pdl .rs-role { margin: 1.2mm 0 0; font-size: 10pt; font-weight: 600; color: var(--pdl-accent); }
+.pdl .rs-contact { margin-top: 2.5mm; }
+.pdl .rs-contact-line { margin: 0; font-size: 8.5pt; color: #5b6172; }
+
+.pdl .rs-section { margin-bottom: 6mm; }
+.pdl .rs-title {
+  font-size: 10.5pt;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #14161f;
+  margin: 0 0 2.5mm;
+}
+
+.pdl .rs-profile { margin: 0; }
+
+/* Skills agrupadas por dominio */
+.pdl-skill-group { display: flex; gap: 4mm; align-items: baseline; margin-bottom: 2mm; }
+.pdl-tier {
+  flex: 0 0 20mm;
+  font-size: 8pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--pdl-accent);
+}
+.pdl-chips { display: flex; flex-wrap: wrap; gap: 1.5mm; }
+.pdl-chip {
+  font-size: 8.3pt;
+  padding: 0.6mm 2.4mm;
+  border: 0.3mm solid #d6d9e4;
+  border-radius: 4mm;
+  background: #f6f7fb;
+}
+
+/* Experiencia con logros destacados */
+.pdl .rs-item { margin-bottom: 4.5mm; }
+.pdl .rs-item-title { font-size: 10.5pt; font-weight: 700; margin: 0; }
+.pdl .rs-loc { font-weight: normal; color: #7a7f8f; }
+.pdl .rs-dates { font-size: 8pt; color: #9298a8; margin: 0.3mm 0 1.2mm; text-transform: uppercase; letter-spacing: 0.08em; }
+.pdl .rs-bullets { margin: 0; padding-left: 4.5mm; }
+.pdl .rs-bullets li { margin-bottom: 0.7mm; }
+.pdl .rs-subhead {
+  margin: 2mm 0 0.8mm;
+  font-weight: 700;
+  font-size: 9pt;
+  color: var(--pdl-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.pdl-exp .rs-subhead + .rs-bullets {
+  border-left: 0.8mm solid var(--pdl-accent);
+  background: #f6f7fb;
+  padding: 2mm 3mm 2mm 6.5mm;
+  border-radius: 0 1.5mm 1.5mm 0;
+}
+
+.pdl .rs-inline-list { margin: 0; }
+.pdl .rs-refs { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm 6mm; }
+.pdl .rs-muted { color: #7a7f8f; font-size: 8.3pt; }
+
+.pdl--compact { font-size: 8.8pt; padding: 11mm 13mm; }
+.pdl--compact .rs-section { margin-bottom: 4.5mm; }
+.pdl--compact .rs-item { margin-bottom: 3mm; }

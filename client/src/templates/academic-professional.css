@@ -1,0 +1,43 @@
+/* Academic Professional — serio, con peso en formación. */
+
+.acd {
+  --acd-ink: #232323;
+  padding: 16mm 19mm;
+  font-family: "Cambria", Georgia, "Times New Roman", serif;
+  font-size: 10pt;
+  line-height: 1.55;
+  color: var(--acd-ink);
+}
+
+.acd-head { text-align: center; margin-bottom: 6.5mm; }
+.acd .rs-header { display: flex; flex-direction: column; align-items: center; gap: 3mm; }
+.acd .rs-photo { width: 24mm; height: 24mm; border-radius: 50%; object-fit: cover; }
+.acd .rs-name { margin: 0; font-size: 17.5pt; font-weight: 700; }
+.acd .rs-role { margin: 1mm 0 0; font-size: 9.5pt; font-style: italic; color: #555; }
+.acd .rs-contact { margin-top: 2mm; }
+.acd .rs-contact-line { margin: 0 0 0.5mm; font-size: 8.5pt; color: #555; }
+
+.acd .rs-section { margin-bottom: 6mm; }
+.acd .rs-title {
+  font-size: 11pt;
+  font-weight: 700;
+  margin: 0 0 2.2mm;
+  padding-bottom: 0.8mm;
+  border-bottom: 0.4mm double #232323;
+}
+
+.acd .rs-profile { margin: 0; text-align: justify; }
+.acd .rs-item { margin-bottom: 3.8mm; }
+.acd .rs-item-title { font-size: 10.5pt; font-weight: 700; margin: 0; }
+.acd .rs-loc { font-weight: normal; font-style: italic; color: #555; }
+.acd .rs-dates { font-size: 8.5pt; color: #666; margin: 0.3mm 0 1mm; }
+.acd .rs-bullets { margin: 0; padding-left: 5mm; }
+.acd .rs-bullets li { margin-bottom: 0.7mm; }
+.acd .rs-subhead { font-weight: 700; font-size: 9.5pt; margin: 1.5mm 0 0.6mm; font-style: italic; }
+.acd .rs-inline-list { margin: 0; }
+.acd .rs-refs { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm 6mm; }
+.acd .rs-muted { color: #666; font-size: 8.7pt; }
+
+.acd--compact { font-size: 9.2pt; padding: 13mm 16mm; }
+.acd--compact .rs-section { margin-bottom: 4.5mm; }
+.acd--compact .rs-item { margin-bottom: 2.6mm; }

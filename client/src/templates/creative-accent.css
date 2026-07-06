@@ -1,0 +1,114 @@
+/* ============================================================
+   CreativeAccentTemplate — banda superior de color + dos columnas.
+   ============================================================ */
+
+.crt {
+  --crt-accent: #7c3aed;
+  --crt-band: #4c1d95;
+  font-family: "Inter", "Segoe UI", Arial, system-ui, sans-serif;
+  font-size: 9.5pt;
+  line-height: 1.5;
+  color: #26262b;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- Banda superior ---------- */
+
+.crt-band {
+  background: linear-gradient(120deg, var(--crt-band), var(--crt-accent));
+  color: #fff;
+  padding: 11mm 14mm 9mm;
+}
+
+.crt-band .rs-header {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8mm;
+}
+
+.crt-band .rs-photo {
+  width: 28mm;
+  height: 28mm;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1mm solid rgba(255, 255, 255, 0.4);
+  flex: 0 0 auto;
+}
+
+.crt-band .rs-name { margin: 0; font-size: 19pt; font-weight: 700; }
+.crt-band .rs-role {
+  margin: 1.2mm 0 0;
+  font-size: 9pt;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.crt-band .rs-contact { margin-top: 3mm; }
+.crt-band .rs-contact-line { margin: 0; font-size: 8.5pt; color: rgba(255, 255, 255, 0.9); }
+
+/* ---------- Cuerpo a dos columnas ---------- */
+
+.crt-body {
+  display: flex;
+  gap: 8mm;
+  padding: 9mm 14mm 13mm;
+  flex: 1;
+}
+
+.crt-main { flex: 1 1 62%; min-width: 0; }
+.crt-side { flex: 1 1 38%; min-width: 0; }
+
+.crt .rs-section { margin-bottom: 6mm; }
+
+.crt .rs-title {
+  font-size: 11pt;
+  font-weight: 700;
+  color: #17171c;
+  margin: 0 0 2.5mm;
+  padding-left: 2.5mm;
+  border-left: 1.2mm solid var(--crt-accent);
+}
+
+.crt .rs-profile { margin: 0; }
+
+.crt .rs-item { margin-bottom: 4mm; }
+.crt .rs-item-title { font-size: 10pt; font-weight: 600; margin: 0; }
+.crt .rs-loc { font-weight: normal; color: #77777e; }
+.crt .rs-dates { font-size: 8pt; color: #9a9aa2; margin: 0.3mm 0 1.2mm; text-transform: uppercase; letter-spacing: 0.08em; }
+
+.crt .rs-bullets { margin: 0; padding-left: 4.5mm; }
+.crt .rs-bullets li { margin-bottom: 0.8mm; }
+.crt .rs-bullets li::marker { color: var(--crt-accent); }
+.crt .rs-subhead { margin: 1.5mm 0 0.6mm; font-weight: 700; font-size: 9pt; color: var(--crt-accent); }
+
+/* Barras en la columna lateral */
+.crt .rs-lvl { margin-bottom: 2.4mm; }
+.crt .rs-lvl--plain { margin-bottom: 1.2mm; }
+.crt .rs-lvl-name { font-size: 8.5pt; margin-bottom: 0.8mm; }
+.crt .rs-track {
+  height: 1.4mm;
+  border-radius: 1mm;
+  background: #ece9f5;
+  overflow: hidden;
+}
+.crt .rs-fill { height: 100%; background: var(--crt-accent); border-radius: 1mm; }
+
+.crt-side a { color: var(--crt-accent); text-decoration: underline; }
+.crt .rs-contact-row { margin: 0 0 1.2mm; font-size: 8.5pt; }
+
+.crt .rs-refs { display: block; }
+.crt .rs-ref { margin-bottom: 2.5mm; }
+.crt .rs-ref-name { font-size: 9pt; }
+.crt .rs-muted { color: #77777e; font-size: 8pt; }
+
+/* ---------- Modo compacto ---------- */
+
+.crt--compact { font-size: 8.8pt; }
+.crt--compact .crt-band { padding: 8mm 12mm 7mm; }
+.crt--compact .crt-body { padding: 7mm 12mm 10mm; }
+.crt--compact .rs-section { margin-bottom: 4.5mm; }
+.crt--compact .rs-item { margin-bottom: 2.8mm; }

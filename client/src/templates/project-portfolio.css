@@ -1,0 +1,66 @@
+/* Project Portfolio — proyectos como cards en cuadrícula. */
+
+.prj {
+  --prj-accent: #0369a1;
+  padding: 14mm 16mm;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  font-size: 9.5pt;
+  line-height: 1.5;
+  color: #23272e;
+}
+
+.prj-head { margin-bottom: 5.5mm; padding-bottom: 3.5mm; border-bottom: 0.7mm solid var(--prj-accent); }
+.prj .rs-header { display: flex; align-items: center; gap: 6mm; }
+.prj .rs-photo { width: 24mm; height: 24mm; border-radius: 50%; object-fit: cover; }
+.prj .rs-name { margin: 0; font-size: 19pt; font-weight: 800; }
+.prj .rs-role { margin: 1mm 0 0; font-size: 9.8pt; font-weight: 600; color: var(--prj-accent); }
+.prj .rs-contact { margin-top: 2mm; }
+.prj .rs-contact-line { margin: 0; font-size: 8.4pt; color: #68707c; }
+
+.prj .rs-section { margin-bottom: 6mm; }
+.prj .rs-title {
+  font-size: 10.3pt;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin: 0 0 2.5mm;
+  color: #171a1f;
+}
+
+.prj .rs-profile { margin: 0; }
+
+/* Cards de proyectos en cuadrícula */
+.prj .rs-projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5mm;
+}
+.prj .rs-project {
+  border: 0.3mm solid #d5dbe2;
+  border-top: 0.9mm solid var(--prj-accent);
+  border-radius: 1.5mm;
+  padding: 3mm 3.5mm;
+  margin: 0;
+  background: #f8fafc;
+}
+.prj .rs-project .rs-item-title { font-size: 9.6pt; }
+.prj .rs-project-desc { margin: 0.8mm 0 0; font-size: 8.6pt; }
+.prj .rs-project-tech { margin: 1mm 0 0; font-size: 7.8pt; color: var(--prj-accent); font-weight: 600; }
+.prj .rs-project-link { margin: 0.6mm 0 0; font-size: 7.6pt; }
+.prj .rs-project-link a { color: #68707c; }
+
+.prj .rs-item { margin-bottom: 4mm; }
+.prj .rs-item-title { font-size: 10.3pt; font-weight: 700; margin: 0; }
+.prj .rs-loc { font-weight: normal; color: #68707c; }
+.prj .rs-dates { font-size: 8.2pt; color: #8a919c; margin: 0.3mm 0 1mm; }
+.prj .rs-bullets { margin: 0; padding-left: 4.5mm; }
+.prj .rs-bullets li { margin-bottom: 0.7mm; }
+.prj .rs-bullets li::marker { color: var(--prj-accent); }
+.prj .rs-subhead { font-weight: 700; font-size: 9.2pt; margin: 1.5mm 0 0.6mm; }
+.prj .rs-inline-list { margin: 0; }
+.prj .rs-refs { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm 6mm; }
+.prj .rs-muted { color: #68707c; font-size: 8.4pt; }
+
+.prj--compact { font-size: 8.8pt; padding: 11mm 13mm; }
+.prj--compact .rs-section { margin-bottom: 4.5mm; }
+.prj--compact .rs-item { margin-bottom: 2.8mm; }

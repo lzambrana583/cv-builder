@@ -1,0 +1,20 @@
+# Dependencias y build
+node_modules/
+dist/
+*.log
+.DS_Store
+
+# ---- Datos de usuario (NO versionar: contienen datos personales) ----
+# Todo el contenido de perfiles (CVs, versiones, backups, exports, fotos).
+data/profiles/
+# Respaldo del esquema legacy con datos reales.
+data/cv.legacy.backup.json
+
+# Legacy single-CV (antes de la migración multi-persona)
+uploads/
+data/backups/
+data/versions/
+exports/
+
+# Mantener la carpeta data/ en el repo (la app crea el resto al arrancar)
+!data/.gitkeep

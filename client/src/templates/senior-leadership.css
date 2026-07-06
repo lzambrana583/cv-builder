@@ -1,0 +1,81 @@
+/* Senior Leadership — cabecera carbón, logros con peso ejecutivo. */
+
+.snl {
+  --snl-dark: #23272e;
+  --snl-gold: #b98e2f;
+  font-family: "Segoe UI", Calibri, Arial, sans-serif;
+  font-size: 9.7pt;
+  line-height: 1.52;
+  color: #2b2f36;
+  display: flex;
+  flex-direction: column;
+}
+
+.snl-band {
+  background: var(--snl-dark);
+  color: #fff;
+  padding: 11mm 17mm 9mm;
+}
+.snl-band .rs-header { display: flex; align-items: center; gap: 7mm; }
+.snl-band .rs-photo { width: 25mm; height: 25mm; border-radius: 50%; object-fit: cover; border: 0.8mm solid rgba(255,255,255,.3); }
+.snl-band .rs-name { margin: 0; font-size: 19pt; font-weight: 600; letter-spacing: 0.02em; }
+.snl-band .rs-role {
+  margin: 1.5mm 0 0;
+  font-size: 8.8pt;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--snl-gold);
+}
+.snl-band .rs-contact { margin-top: 2.5mm; }
+.snl-band .rs-contact-line { margin: 0; font-size: 8.4pt; color: rgba(255,255,255,.85); }
+
+.snl-body { padding: 8mm 17mm 14mm; flex: 1; }
+
+.snl .rs-section { margin-bottom: 6mm; }
+.snl .rs-title {
+  font-size: 10pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--snl-dark);
+  margin: 0 0 2.4mm;
+  padding-bottom: 1mm;
+  border-bottom: 0.5mm solid var(--snl-gold);
+  display: inline-block;
+  min-width: 40mm;
+}
+
+/* Resumen profesional fuerte */
+.snl-summary .rs-profile {
+  margin: 0;
+  font-size: 10.4pt;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.snl .rs-item { margin-bottom: 4.5mm; }
+.snl .rs-item-title { font-size: 10.5pt; font-weight: 700; margin: 0; }
+.snl .rs-loc { font-weight: normal; color: #737a85; }
+.snl .rs-dates { font-size: 8.3pt; color: #8b929d; margin: 0.3mm 0 1.1mm; letter-spacing: 0.04em; }
+.snl .rs-bullets { margin: 0; padding-left: 4.5mm; }
+.snl .rs-bullets li { margin-bottom: 0.7mm; }
+/* Logros destacados */
+.snl .rs-subhead {
+  font-weight: 700;
+  font-size: 9.3pt;
+  margin: 2mm 0 0.8mm;
+  color: var(--snl-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.snl .rs-subhead + .rs-bullets li { font-weight: 600; }
+
+.snl .rs-inline-list { margin: 0; }
+.snl .rs-refs { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm 6mm; }
+.snl .rs-muted { color: #737a85; font-size: 8.4pt; }
+
+.snl--compact { font-size: 8.9pt; }
+.snl--compact .snl-band { padding: 8mm 14mm 7mm; }
+.snl--compact .snl-body { padding: 6mm 14mm 11mm; }
+.snl--compact .rs-section { margin-bottom: 4.5mm; }
+.snl--compact .rs-item { margin-bottom: 3mm; }

@@ -1,0 +1,102 @@
+/* ============================================================
+   ExecutiveSerifTemplate — una columna serif elegante y sobria.
+   ============================================================ */
+
+.exv {
+  padding: 16mm 19mm;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 10pt;
+  line-height: 1.55;
+  color: #1c1c1c;
+}
+
+/* ---------- Cabecera centrada ---------- */
+
+.exv-head { text-align: center; margin-bottom: 7mm; }
+
+.exv .rs-name {
+  margin: 0;
+  font-size: 20pt;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.exv .rs-role {
+  margin: 1.5mm 0 0;
+  font-size: 9pt;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: #6b6b6b;
+}
+
+.exv .rs-contact { margin-top: 2.5mm; }
+.exv .rs-contact-line { margin: 0 0 0.6mm; font-size: 8.5pt; color: #555; }
+
+.exv-double-rule {
+  margin-top: 4mm;
+  border-top: 0.5mm solid #1c1c1c;
+  border-bottom: 0.2mm solid #1c1c1c;
+  height: 0.9mm;
+}
+
+/* ---------- Secciones ---------- */
+
+.exv .rs-section { margin-bottom: 6.5mm; }
+
+.exv .rs-title {
+  font-size: 10pt;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  text-align: center;
+  color: #1c1c1c;
+  margin: 0 0 3mm;
+}
+
+.exv .rs-title::after {
+  content: "";
+  display: block;
+  width: 14mm;
+  border-bottom: 0.3mm solid #9a9a9a;
+  margin: 1.6mm auto 0;
+}
+
+.exv .rs-profile { margin: 0; text-align: justify; }
+
+.exv .rs-item { margin-bottom: 4mm; }
+.exv .rs-item-title { font-size: 10.5pt; font-weight: 700; margin: 0; }
+.exv .rs-loc { font-weight: normal; font-style: italic; color: #555; }
+.exv .rs-dates {
+  font-size: 8pt;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8a8a8a;
+  margin: 0.4mm 0 1.2mm;
+}
+
+.exv .rs-bullets { margin: 0; padding-left: 5mm; }
+.exv .rs-bullets li { margin-bottom: 0.8mm; }
+.exv .rs-subhead { margin: 1.5mm 0 0.6mm; font-weight: 700; font-size: 9.5pt; font-style: italic; }
+
+.exv .rs-inline-list { margin: 0; text-align: center; font-size: 9.5pt; }
+
+.exv-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 10mm;
+}
+
+.exv .rs-refs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3mm 6mm;
+  text-align: center;
+}
+.exv .rs-ref-name { font-size: 10pt; }
+.exv .rs-muted { color: #666; font-size: 8.5pt; }
+
+/* ---------- Modo compacto ---------- */
+
+.exv--compact { font-size: 9.2pt; padding: 13mm 16mm; }
+.exv--compact .rs-section { margin-bottom: 5mm; }
+.exv--compact .rs-item { margin-bottom: 3mm; }

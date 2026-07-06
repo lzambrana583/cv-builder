@@ -1,0 +1,71 @@
+/* Timeline Resume — experiencia como línea de tiempo vertical. */
+
+.tml {
+  --tml-accent: #0e7490;
+  padding: 15mm 17mm;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  font-size: 9.5pt;
+  line-height: 1.5;
+  color: #24292f;
+}
+
+.tml-head { margin-bottom: 6mm; padding-bottom: 3.5mm; border-bottom: 0.5mm solid var(--tml-accent); }
+.tml .rs-header { display: flex; align-items: center; gap: 6mm; }
+.tml .rs-photo { width: 24mm; height: 24mm; border-radius: 50%; object-fit: cover; }
+.tml .rs-name { margin: 0; font-size: 19pt; font-weight: 700; }
+.tml .rs-role { margin: 1mm 0 0; font-size: 9.8pt; color: var(--tml-accent); font-weight: 600; }
+.tml .rs-contact { margin-top: 2.2mm; }
+.tml .rs-contact-line { margin: 0; font-size: 8.5pt; color: #66707c; }
+
+.tml .rs-section { margin-bottom: 6mm; }
+.tml .rs-title {
+  font-size: 10.5pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #17191c;
+  margin: 0 0 3mm;
+}
+
+.tml .rs-profile { margin: 0; }
+
+/* Línea de tiempo: raíl + punto por ítem + fecha destacada */
+.tml-timeline .rs-item {
+  position: relative;
+  margin: 0 0 0 1.6mm;
+  padding: 0 0 4.5mm 7mm;
+  border-left: 0.5mm solid #cbd5dd;
+}
+.tml-timeline .rs-item:last-child { border-left-color: transparent; }
+.tml-timeline .rs-item::before {
+  content: "";
+  position: absolute;
+  left: -1.55mm;
+  top: 1mm;
+  width: 2.6mm;
+  height: 2.6mm;
+  border-radius: 50%;
+  background: var(--tml-accent);
+  border: 0.5mm solid #fff;
+  box-shadow: 0 0 0 0.3mm var(--tml-accent);
+}
+.tml-timeline .rs-dates {
+  font-size: 8.2pt;
+  font-weight: 700;
+  color: var(--tml-accent);
+  margin: 0 0 0.8mm;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.tml .rs-item-title { font-size: 10.3pt; font-weight: 700; margin: 0 0 0.4mm; }
+.tml .rs-loc { font-weight: normal; color: #66707c; }
+.tml .rs-bullets { margin: 0; padding-left: 4.5mm; }
+.tml .rs-bullets li { margin-bottom: 0.7mm; }
+.tml .rs-subhead { font-weight: 700; font-size: 9.2pt; margin: 1.5mm 0 0.6mm; color: var(--tml-accent); }
+.tml .rs-inline-list { margin: 0; }
+.tml .rs-refs { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm 6mm; }
+.tml .rs-muted { color: #66707c; font-size: 8.4pt; }
+
+.tml--compact { font-size: 8.8pt; padding: 12mm 14mm; }
+.tml--compact .rs-section { margin-bottom: 4.5mm; }
+.tml--compact .tml-timeline .rs-item { padding-bottom: 3mm; }

@@ -1,0 +1,101 @@
+/* ============================================================
+   AtsSimpleTemplate — una columna, sin gráficos, apto para ATS.
+   Tipografía estándar y jerarquía simple. Tamaño en resume-base.css.
+   ============================================================ */
+
+.ats {
+  padding: 16mm 18mm;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  line-height: 1.5;
+  color: #111;
+}
+
+/* ---------- Encabezado ---------- */
+
+.ats .rs-header { margin-bottom: 2mm; }
+
+.ats .rs-name {
+  font-size: 17pt;
+  margin: 0 0 1mm;
+  font-weight: 700;
+}
+
+.ats .rs-role {
+  font-size: 11pt;
+  font-weight: 600;
+  margin: 0 0 1.5mm;
+  color: #222;
+}
+
+.ats .rs-contact { margin-bottom: 5mm; }
+.ats .rs-contact-line {
+  font-size: 9pt;
+  color: #333;
+  margin: 0 0 0.8mm;
+}
+
+/* ---------- Secciones ---------- */
+
+.ats .rs-section {
+  margin-bottom: 5.5mm;
+}
+
+.ats .rs-title {
+  font-size: 11.5pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin: 0 0 2mm;
+  padding-bottom: 1mm;
+  border-bottom: 0.4mm solid #111;
+}
+
+.ats .rs-profile { margin: 0; }
+
+.ats .rs-item { margin-bottom: 3.5mm; }
+.ats .rs-item--tight { margin-bottom: 2mm; }
+
+.ats .rs-item-title {
+  font-size: 10.5pt;
+  font-weight: 700;
+  margin: 0;
+}
+
+.ats .rs-dates {
+  font-size: 8.5pt;
+  color: #555;
+  margin: 0.3mm 0 1mm;
+}
+
+.ats .rs-bullets {
+  margin: 0;
+  padding-left: 5mm;
+}
+
+.ats .rs-bullets li { margin-bottom: 0.8mm; }
+
+.ats .rs-subhead {
+  font-weight: 700;
+  font-size: 9.5pt;
+  margin: 1.2mm 0 0.6mm;
+}
+
+.ats .rs-inline-list { margin: 0; }
+
+/* Referencias en lista simple (una columna, ATS friendly) */
+.ats .rs-refs { display: block; }
+.ats .rs-ref { margin-bottom: 2mm; }
+.ats .rs-ref-name { font-size: 10.5pt; }
+.ats .rs-muted { font-size: 8.5pt; color: #555; }
+
+/* ---------- Modo compacto ---------- */
+
+.ats--compact {
+  font-size: 9.2pt;
+  line-height: 1.4;
+  padding: 13mm 15mm;
+}
+.ats--compact .rs-section { margin-bottom: 4mm; }
+.ats--compact .rs-item { margin-bottom: 2.5mm; }
+.ats--compact .rs-bullets li { margin-bottom: 0.4mm; }

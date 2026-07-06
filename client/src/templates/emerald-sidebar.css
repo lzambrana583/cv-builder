@@ -1,0 +1,249 @@
+/* ============================================================
+   EmeraldSidebarTemplate — sidebar esmeralda 32% + columna blanca.
+   El tamaño A4/Carta y el modo print vienen de resume-base.css;
+   aquí solo layout, tipografía y colores (variables --emt-*).
+   ============================================================ */
+
+.emt {
+  /* Personalizables desde cv.settings (Design) */
+  --emt-green: #0b4f3f;                                             /* sidebarColor */
+  --emt-accent: #0b4f3f;                                            /* accentColor */
+  --emt-ink: #26302c;                                               /* textColor */
+  --emt-heading: #0d0f0e;                                           /* headingColor */
+  --emt-font: "Inter", "Segoe UI", Arial, system-ui, sans-serif;    /* fontFamily */
+  --emt-heading-font: Georgia, "Times New Roman", serif;            /* headingFontFamily */
+  --emt-gray: #a3aca7;
+
+  display: flex;
+  font-family: var(--emt-font);
+  font-size: 9.5pt;
+  line-height: 1.55;
+  color: var(--emt-ink);
+}
+
+/* ---------- Columna izquierda (sidebar 32%) ---------- */
+
+.emt-side {
+  flex: 0 0 32%;
+  max-width: 32%;
+  background: var(--emt-green);
+  color: #fff;
+  padding: 13mm 7.5mm;
+}
+
+.emt-side .rs-photo {
+  display: block;
+  width: 36mm;
+  height: 36mm;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 6mm;
+  border: 1mm solid rgba(255, 255, 255, 0.28);
+}
+
+.emt-side .rs-name {
+  font-family: var(--emt-heading-font);
+  font-weight: 600;
+  font-size: 16.5pt;
+  line-height: 1.25;
+  text-align: center;
+  margin: 0;
+}
+
+.emt-rule {
+  width: 10mm;
+  height: 0.6mm;
+  background: rgba(255, 255, 255, 0.55);
+  margin: 3.5mm auto;
+}
+
+.emt-side .rs-role {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 6.8pt;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.88);
+  margin: 0 0 9mm;
+}
+
+.emt-side .rs-section {
+  margin-bottom: 7.5mm;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.emt-side .rs-title {
+  font-family: var(--emt-heading-font);
+  font-size: 10.5pt;
+  font-weight: 600;
+  margin: 0 0 2.5mm;
+  padding-bottom: 1.2mm;
+  border-bottom: 0.3mm solid rgba(255, 255, 255, 0.3);
+}
+
+.emt-side .rs-contact-label {
+  font-size: 6.8pt;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: rgba(255, 255, 255, 0.65);
+  margin: 3mm 0 0.6mm;
+  font-weight: 600;
+}
+
+.emt-side .rs-contact-row {
+  margin: 0 0 1.4mm;
+  font-size: 8.3pt;
+  color: rgba(255, 255, 255, 0.94);
+}
+
+.emt-side a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.rs-wrap {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* Barras de nivel: blancas sobre pista semitransparente */
+.emt-side .rs-lvl { margin-bottom: 2.8mm; }
+.emt-side .rs-lvl--plain { margin-bottom: 1.4mm; }
+.emt-side .rs-lvl-name { font-size: 8.3pt; margin-bottom: 0.9mm; }
+.emt-side .rs-track {
+  height: 1.3mm;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 1mm;
+  overflow: hidden;
+}
+.emt-side .rs-fill {
+  height: 100%;
+  background: #fff;
+  border-radius: 1mm;
+}
+
+/* ---------- Columna derecha (blanca) ---------- */
+
+.emt-main {
+  flex: 1;
+  padding: 13mm 11mm 15mm;
+}
+
+.emt-main .rs-section {
+  margin-bottom: 7mm;
+}
+
+.emt-main .rs-title {
+  font-family: var(--emt-heading-font);
+  font-size: 14.5pt;
+  font-weight: 700;
+  color: var(--emt-heading);
+  margin: 0 0 3.5mm;
+}
+
+.rs-profile {
+  margin: 0;
+  text-align: justify;
+}
+
+.emt-main .rs-item {
+  margin-bottom: 5mm;
+}
+
+.emt-main .rs-item-title {
+  font-size: 10.5pt;
+  font-weight: 600;
+  color: var(--emt-heading);
+  margin: 0;
+  line-height: 1.35;
+}
+
+.rs-loc { font-weight: inherit; }
+
+.emt-main .rs-dates {
+  text-transform: uppercase;
+  font-size: 6.8pt;
+  letter-spacing: 0.12em;
+  color: var(--emt-gray);
+  margin: 0.8mm 0 1.8mm;
+}
+
+.emt-main .rs-bullets {
+  margin: 0;
+  padding-left: 4.5mm;
+}
+
+.emt-main .rs-bullets li {
+  margin-bottom: 1mm;
+}
+
+.emt-main .rs-bullets li::marker {
+  color: var(--emt-accent);
+}
+
+.emt-main .rs-subhead {
+  font-weight: 600;
+  font-size: 9.5pt;
+  margin: 2mm 0 1mm;
+}
+
+.rs-refs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5mm 7mm;
+}
+
+.emt-main .rs-ref-name { font-size: 9.5pt; }
+
+.rs-muted {
+  color: #78817c;
+  font-size: 8.3pt;
+}
+
+/* ---------- Modo compacto (compactMode) ---------- */
+
+.emt--compact {
+  font-size: 8.8pt;
+  line-height: 1.42;
+}
+.emt--compact .emt-side { padding: 10mm 6.5mm; }
+.emt--compact .emt-main { padding: 10mm 9mm 12mm; }
+.emt--compact .emt-side .rs-photo { width: 30mm; height: 30mm; margin-bottom: 4.5mm; }
+.emt--compact .emt-side .rs-name { font-size: 14.5pt; }
+.emt--compact .emt-side .rs-role { margin-bottom: 6.5mm; }
+.emt--compact .emt-side .rs-section { margin-bottom: 5.5mm; }
+.emt--compact .emt-side .rs-contact-row { margin-bottom: 1mm; }
+.emt--compact .emt-side .rs-lvl { margin-bottom: 2mm; }
+.emt--compact .emt-main .rs-section { margin-bottom: 5mm; }
+.emt--compact .emt-main .rs-title { font-size: 13pt; margin-bottom: 2.5mm; }
+.emt--compact .emt-main .rs-item { margin-bottom: 3.5mm; }
+.emt--compact .emt-main .rs-item-title { font-size: 10pt; }
+.emt--compact .emt-main .rs-dates { margin: 0.5mm 0 1.2mm; }
+.emt--compact .emt-main .rs-bullets li { margin-bottom: 0.5mm; }
+
+/* ---------- Print ---------- */
+
+@media print {
+  /* Franja verde repetida en cada página impresa (position: fixed se
+     repite por página), para que el sidebar no se corte cuando el
+     contenido termina a mitad de la última página. */
+  .emt::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 67.2mm; /* 32% de 210mm */
+    height: 100%;
+    background: var(--emt-green);
+  }
+
+  .emt.rs--letter::before {
+    width: 69.1mm; /* 32% de 215.9mm */
+  }
+
+  .emt-side {
+    position: relative;
+    z-index: 1;
+  }
+}

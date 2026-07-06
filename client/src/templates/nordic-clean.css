@@ -1,0 +1,53 @@
+/* Nordic Clean — mucho aire, tipografía ligera, premium. */
+
+.nrd {
+  padding: 22mm 24mm;
+  font-family: "Segoe UI Light", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-size: 9.5pt;
+  line-height: 1.75;
+  color: #33373c;
+}
+
+.nrd-head { margin-bottom: 12mm; }
+.nrd .rs-header { display: flex; align-items: center; gap: 8mm; }
+.nrd .rs-photo { width: 24mm; height: 24mm; border-radius: 50%; object-fit: cover; }
+.nrd .rs-name { margin: 0; font-size: 21pt; font-weight: 250; letter-spacing: 0.02em; color: #1e2125; }
+.nrd .rs-role {
+  margin: 2mm 0 0;
+  font-size: 8.5pt;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  color: #9aa0a6;
+}
+.nrd .rs-contact { margin-top: 3.5mm; }
+.nrd .rs-contact-line { margin: 0 0 0.8mm; font-size: 8.3pt; color: #9aa0a6; white-space: pre-wrap; }
+
+.nrd .rs-section { margin-bottom: 10mm; }
+.nrd .rs-title {
+  font-size: 8.3pt;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: #b3b8bd;
+  margin: 0 0 4mm;
+}
+
+.nrd .rs-profile { margin: 0; }
+.nrd .rs-item { margin-bottom: 6mm; }
+.nrd .rs-item-title { font-size: 10.5pt; font-weight: 600; margin: 0; color: #1e2125; }
+.nrd .rs-loc { font-weight: normal; color: #9aa0a6; }
+.nrd .rs-dates { font-size: 8pt; color: #b3b8bd; margin: 0.5mm 0 1.6mm; letter-spacing: 0.1em; }
+.nrd .rs-bullets { margin: 0; padding-left: 4.5mm; }
+.nrd .rs-bullets li { margin-bottom: 1.1mm; }
+.nrd .rs-bullets li::marker { color: #b3b8bd; }
+.nrd .rs-subhead { font-weight: 600; font-size: 9.2pt; margin: 2mm 0 0.8mm; color: #1e2125; }
+
+.nrd .rs-levels--list { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.6mm 8mm; }
+.nrd .rs-lvl-name { font-size: 8.8pt; }
+.nrd .rs-refs { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm 8mm; }
+.nrd .rs-muted { color: #9aa0a6; font-size: 8.3pt; }
+
+.nrd--compact { font-size: 8.9pt; line-height: 1.55; padding: 16mm 18mm; }
+.nrd--compact .nrd-head { margin-bottom: 8mm; }
+.nrd--compact .rs-section { margin-bottom: 6.5mm; }
+.nrd--compact .rs-item { margin-bottom: 3.8mm; }

@@ -1,0 +1,44 @@
+/* Base común de todas las plantillas de CV.
+   Caja A4 real (mm), sombra solo en pantalla y colores exactos al imprimir.
+   Los documentos son inmunes al modo oscuro de la app. */
+
+.rs-resume {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background: #fff;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.18); /* solo pantalla */
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+
+.rs-resume *,
+.rs-resume *::before,
+.rs-resume *::after {
+  box-sizing: inherit;
+}
+
+.rs--plain {
+  box-shadow: none;
+  margin: 0;
+}
+
+.rs--letter {
+  width: 215.9mm;
+  min-height: 279.4mm;
+}
+
+/* Ítems nunca se parten entre páginas */
+.rs-resume .rs-item,
+.rs-resume .rs-ref {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+@media print {
+  .rs-resume {
+    box-shadow: none;
+    margin: 0;
+  }
+}

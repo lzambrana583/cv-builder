@@ -1,0 +1,59 @@
+/* Skills Focused — habilidades protagonistas en cuadrícula superior. */
+
+.skf {
+  --skf-accent: #b45309;
+  padding: 14mm 16mm;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  font-size: 9.5pt;
+  line-height: 1.5;
+  color: #262a30;
+}
+
+.skf-head { margin-bottom: 5.5mm; }
+.skf .rs-header { display: flex; align-items: center; gap: 6mm; }
+.skf .rs-photo { width: 23mm; height: 23mm; border-radius: 50%; object-fit: cover; }
+.skf .rs-name { margin: 0; font-size: 18.5pt; font-weight: 800; }
+.skf .rs-role { margin: 1mm 0 0; font-size: 9.8pt; font-weight: 600; color: var(--skf-accent); }
+.skf .rs-contact { margin-top: 2mm; }
+.skf .rs-contact-line { margin: 0; font-size: 8.4pt; color: #6b727c; }
+
+.skf .rs-section { margin-bottom: 6mm; }
+.skf .rs-title {
+  font-size: 10pt;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 2.5mm;
+  color: #1b1e23;
+}
+
+/* Bloque de skills destacado */
+.skf-skills {
+  background: #faf6ef;
+  border: 0.3mm solid #ecdfc8;
+  border-radius: 2mm;
+  padding: 3.5mm 4.5mm;
+}
+.skf-skills .rs-title { color: var(--skf-accent); margin-bottom: 2mm; }
+.skf .rs-levels--bars,
+.skf .rs-levels--list { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.6mm 6mm; }
+.skf .rs-lvl { display: flex; align-items: center; gap: 2.5mm; }
+.skf .rs-lvl-name { flex: 1; font-size: 8.4pt; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.skf .rs-track { flex: 0 0 12mm; height: 1.4mm; border-radius: 1mm; background: #ecdfc8; overflow: hidden; }
+.skf .rs-fill { height: 100%; background: var(--skf-accent); }
+
+.skf .rs-profile { margin: 0; }
+.skf .rs-item { margin-bottom: 4mm; }
+.skf .rs-item-title { font-size: 10.3pt; font-weight: 700; margin: 0; }
+.skf .rs-loc { font-weight: normal; color: #6b727c; }
+.skf .rs-dates { font-size: 8.2pt; color: #8a919c; margin: 0.3mm 0 1mm; }
+.skf .rs-bullets { margin: 0; padding-left: 4.5mm; }
+.skf .rs-bullets li { margin-bottom: 0.7mm; }
+.skf .rs-bullets li::marker { color: var(--skf-accent); }
+.skf .rs-subhead { font-weight: 700; font-size: 9.2pt; margin: 1.5mm 0 0.6mm; }
+.skf .rs-refs { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm 6mm; }
+.skf .rs-muted { color: #6b727c; font-size: 8.4pt; }
+
+.skf--compact { font-size: 8.8pt; padding: 11mm 13mm; }
+.skf--compact .rs-section { margin-bottom: 4.5mm; }
+.skf--compact .rs-item { margin-bottom: 2.8mm; }

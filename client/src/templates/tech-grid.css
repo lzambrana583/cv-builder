@@ -1,0 +1,123 @@
+/* ============================================================
+   TechGridTemplate — compacta, contacto mono y skills en grid.
+   ============================================================ */
+
+.tch {
+  --tch-accent: #0f766e;
+  --tch-mono: "Cascadia Code", "Consolas", "Courier New", monospace;
+  padding: 13mm 15mm;
+  font-family: "Segoe UI", Arial, system-ui, sans-serif;
+  font-size: 9.5pt;
+  line-height: 1.45;
+  color: #1f2429;
+}
+
+/* ---------- Cabecera ---------- */
+
+.tch-head {
+  margin-bottom: 6mm;
+  padding-bottom: 3.5mm;
+  border-bottom: 0.6mm solid var(--tch-accent);
+}
+
+.tch .rs-header { display: flex; align-items: center; gap: 6mm; }
+
+.tch .rs-photo {
+  width: 22mm;
+  height: 22mm;
+  border-radius: 3mm;
+  object-fit: cover;
+}
+
+.tch .rs-name { margin: 0; font-size: 17pt; font-weight: 700; letter-spacing: -0.01em; }
+.tch .rs-role { margin: 0.8mm 0 0; font-size: 9.5pt; color: var(--tch-accent); font-weight: 600; }
+
+.tch .rs-contact { margin-top: 2.5mm; }
+.tch .rs-contact-line {
+  margin: 0 0 0.5mm;
+  font-family: var(--tch-mono);
+  font-size: 7.8pt;
+  color: #4b5563;
+}
+
+/* ---------- Secciones ---------- */
+
+.tch .rs-section { margin-bottom: 5.5mm; }
+
+.tch .rs-title {
+  font-size: 9.5pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--tch-accent);
+  margin: 0 0 2.2mm;
+  display: flex;
+  align-items: center;
+  gap: 3mm;
+}
+
+.tch .rs-title::after {
+  content: "";
+  flex: 1;
+  border-top: 0.3mm solid #d7dbdf;
+}
+
+.tch .rs-profile { margin: 0; }
+
+.tch .rs-item { margin-bottom: 3.5mm; }
+.tch .rs-item-title { font-size: 10pt; font-weight: 700; margin: 0; }
+.tch .rs-loc { font-weight: normal; color: #6b7280; }
+.tch .rs-dates {
+  font-family: var(--tch-mono);
+  font-size: 7.5pt;
+  color: #6b7280;
+  margin: 0.3mm 0 1mm;
+}
+
+.tch .rs-bullets { margin: 0; padding-left: 4.5mm; }
+.tch .rs-bullets li { margin-bottom: 0.6mm; }
+.tch .rs-bullets li::marker { color: var(--tch-accent); }
+.tch .rs-subhead { margin: 1.2mm 0 0.5mm; font-weight: 700; font-size: 9pt; }
+
+/* Skills en cuadrícula compacta de dos columnas */
+.tch .rs-levels--bars,
+.tch .rs-levels--list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.4mm 8mm;
+}
+.tch .rs-lvl { display: flex; align-items: center; gap: 3mm; }
+.tch .rs-lvl-name {
+  flex: 1;
+  font-size: 8.5pt;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tch .rs-track {
+  flex: 0 0 16mm;
+  height: 1.6mm;
+  background: #e6e9ec;
+  overflow: hidden;
+}
+.tch .rs-fill { height: 100%; background: var(--tch-accent); }
+
+.tch-two-col {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 0 9mm;
+}
+
+.tch .rs-refs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2.5mm 6mm;
+}
+.tch .rs-ref-name { font-size: 9pt; }
+.tch .rs-muted { color: #6b7280; font-size: 8pt; }
+
+/* ---------- Modo compacto ---------- */
+
+.tch--compact { font-size: 8.8pt; padding: 11mm 13mm; }
+.tch--compact .rs-section { margin-bottom: 4mm; }
+.tch--compact .rs-item { margin-bottom: 2.5mm; }

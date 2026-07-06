@@ -1,0 +1,50 @@
+/* Banking Professional — formal, sobrio, líneas finas. */
+
+.bnk {
+  --bnk-navy: #1f3a5f;
+  padding: 16mm 18mm;
+  font-family: "Segoe UI", Calibri, Arial, sans-serif;
+  font-size: 9.8pt;
+  line-height: 1.5;
+  color: #23272e;
+}
+
+.bnk-head {
+  margin-bottom: 6.5mm;
+  padding-bottom: 3.5mm;
+  border-bottom: 0.2mm solid #b9c2ce;
+}
+.bnk .rs-header { display: flex; align-items: center; gap: 6mm; }
+.bnk .rs-photo { width: 22mm; height: 22mm; border-radius: 2mm; object-fit: cover; }
+.bnk .rs-name { margin: 0; font-size: 17pt; font-weight: 600; color: var(--bnk-navy); }
+.bnk .rs-role { margin: 1mm 0 0; font-size: 9.5pt; color: #4b5563; }
+.bnk .rs-contact { margin-top: 2mm; }
+.bnk .rs-contact-line { margin: 0 0 0.5mm; font-size: 8.5pt; color: #5b6472; }
+
+.bnk .rs-section { margin-bottom: 6mm; }
+.bnk .rs-title {
+  font-size: 9.5pt;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--bnk-navy);
+  margin: 0 0 2.2mm;
+  padding-bottom: 1mm;
+  border-bottom: 0.2mm solid #d4dae2;
+}
+
+.bnk .rs-profile { margin: 0; text-align: justify; }
+.bnk .rs-item { margin-bottom: 4mm; }
+.bnk .rs-item-title { font-size: 10pt; font-weight: 600; margin: 0; }
+.bnk .rs-loc { font-weight: normal; color: #6b7280; }
+.bnk .rs-dates { font-size: 8.3pt; color: #6b7280; margin: 0.3mm 0 1mm; font-style: italic; }
+.bnk .rs-bullets { margin: 0; padding-left: 4.5mm; }
+.bnk .rs-bullets li { margin-bottom: 0.7mm; }
+.bnk .rs-subhead { font-weight: 600; font-size: 9.3pt; margin: 1.5mm 0 0.6mm; color: var(--bnk-navy); }
+.bnk .rs-inline-list { margin: 0; }
+.bnk .rs-refs { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm 6mm; }
+.bnk .rs-muted { color: #6b7280; font-size: 8.5pt; }
+
+.bnk--compact { font-size: 9pt; padding: 13mm 15mm; }
+.bnk--compact .rs-section { margin-bottom: 4.5mm; }
+.bnk--compact .rs-item { margin-bottom: 2.8mm; }

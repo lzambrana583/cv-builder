@@ -1,0 +1,41 @@
+/* Minimal Black — blanco y negro, límpio y directo. */
+
+.mnb {
+  padding: 17mm 19mm;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  font-size: 9.8pt;
+  line-height: 1.55;
+  color: #000;
+}
+
+.mnb-head { margin-bottom: 7mm; }
+.mnb .rs-name { margin: 0; font-size: 22pt; font-weight: 800; letter-spacing: -0.02em; }
+.mnb .rs-role { margin: 1mm 0 0; font-size: 10pt; color: #000; font-weight: 500; }
+.mnb .rs-contact { margin-top: 2.5mm; padding-top: 2.5mm; border-top: 0.5mm solid #000; }
+.mnb .rs-contact-line { margin: 0 0 0.6mm; font-size: 8.5pt; color: #333; }
+
+.mnb .rs-section { margin-bottom: 6mm; }
+.mnb .rs-title {
+  font-size: 10pt;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 2.5mm;
+  color: #000;
+}
+
+.mnb .rs-profile { margin: 0; }
+.mnb .rs-item { margin-bottom: 4mm; }
+.mnb .rs-item-title { font-size: 10.5pt; font-weight: 700; margin: 0; }
+.mnb .rs-loc { font-weight: normal; color: #555; }
+.mnb .rs-dates { font-size: 8.5pt; color: #555; margin: 0.3mm 0 1mm; }
+.mnb .rs-bullets { margin: 0; padding-left: 4.5mm; }
+.mnb .rs-bullets li { margin-bottom: 0.7mm; }
+.mnb .rs-subhead { font-weight: 700; font-size: 9.5pt; margin: 1.5mm 0 0.6mm; }
+.mnb .rs-inline-list { margin: 0; }
+.mnb .rs-refs { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm 6mm; }
+.mnb .rs-muted { color: #555; font-size: 8.5pt; }
+
+.mnb--compact { font-size: 9pt; padding: 13mm 15mm; }
+.mnb--compact .rs-section { margin-bottom: 4.5mm; }
+.mnb--compact .rs-item { margin-bottom: 2.8mm; }

@@ -1,0 +1,52 @@
+/* Compact One Page — todo apretado para caber en una página. */
+
+.cop {
+  padding: 9mm 11mm;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 8.2pt;
+  line-height: 1.35;
+  color: #22252b;
+}
+
+.cop-head { margin-bottom: 3.5mm; padding-bottom: 2mm; border-bottom: 0.4mm solid #22252b; }
+.cop .rs-name { margin: 0; font-size: 14pt; font-weight: 800; }
+.cop .rs-role { margin: 0.5mm 0 0; font-size: 8.5pt; font-weight: 600; color: #4b5160; }
+.cop .rs-contact { margin-top: 1.2mm; }
+.cop .rs-contact-line { margin: 0; font-size: 7.3pt; color: #5c6270; }
+
+.cop-body { display: flex; gap: 6mm; }
+.cop-main { flex: 1 1 64%; min-width: 0; }
+.cop-side { flex: 1 1 36%; min-width: 0; }
+
+.cop .rs-section { margin-bottom: 3.5mm; }
+.cop .rs-title {
+  font-size: 8pt;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 1.4mm;
+  color: #22252b;
+  border-bottom: 0.2mm solid #d8dbe0;
+  padding-bottom: 0.6mm;
+}
+
+.cop .rs-profile { margin: 0; }
+.cop .rs-item { margin-bottom: 2.2mm; }
+.cop .rs-item-title { font-size: 8.7pt; font-weight: 700; margin: 0; }
+.cop .rs-loc { font-weight: normal; color: #6d7380; }
+.cop .rs-dates { font-size: 7pt; color: #7c828f; margin: 0.2mm 0 0.7mm; }
+.cop .rs-bullets { margin: 0; padding-left: 3.5mm; }
+.cop .rs-bullets li { margin-bottom: 0.3mm; }
+.cop .rs-subhead { font-weight: 700; font-size: 7.8pt; margin: 1mm 0 0.4mm; }
+
+.cop .rs-lvl--plain { margin-bottom: 0.6mm; }
+.cop .rs-lvl-name { font-size: 7.8pt; }
+.cop .rs-refs { display: block; }
+.cop .rs-ref { margin-bottom: 1.6mm; }
+.cop .rs-ref-name { font-size: 8pt; }
+.cop .rs-muted { color: #6d7380; font-size: 7.2pt; }
+
+/* compactMode aprieta aún más */
+.cop--compact { font-size: 7.6pt; padding: 7mm 9mm; }
+.cop--compact .rs-section { margin-bottom: 2.5mm; }
+.cop--compact .rs-item { margin-bottom: 1.6mm; }
