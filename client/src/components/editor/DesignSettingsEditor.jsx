@@ -12,7 +12,6 @@ const TOGGLES = [
   { key: "showPhoto", labelKey: "d.showPhoto", def: true },
   { key: "compactMode", labelKey: "d.compactMode", def: false },
   { key: "showSkillBars", labelKey: "d.showSkillBars", def: true },
-  { key: "showReferences", labelKey: "d.showReferences", def: true },
   { key: "showNationality", labelKey: "d.showNationality", def: true },
   { key: "showBirthDate", labelKey: "d.showBirthDate", def: true },
 ];

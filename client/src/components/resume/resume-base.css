@@ -29,11 +29,29 @@
   min-height: 279.4mm;
 }
 
-/* Ítems nunca se parten entre páginas */
-.rs-resume .rs-item,
-.rs-resume .rs-ref {
+/* Flujo continuo entre páginas (válido para TODAS las plantillas):
+   un ítem largo (experiencia, proyecto…) puede continuar en la página
+   siguiente en vez de saltar entero y dejar un hueco blanco. Se protege
+   cada fila indivisible (viñeta, barra de nivel, contacto, referencia) para
+   que no se corte a la mitad, y se evita que un encabezado/fecha quede
+   huérfano al final de una página. Los .rs-item NO llevan break-inside:avoid
+   a propósito, para que el texto sea corrido. */
+.rs-resume .rs-ref,
+.rs-resume .rs-bullets li,
+.rs-resume .rs-lvl,
+.rs-resume .rs-contact-row,
+.rs-resume .rs-item-title {
   break-inside: avoid;
   page-break-inside: avoid;
+}
+
+.rs-resume .rs-title,
+.rs-resume .rs-item-title,
+.rs-resume .rs-dates,
+.rs-resume .rs-subhead,
+.rs-resume .rs-contact-label {
+  break-after: avoid;
+  page-break-after: avoid;
 }
 
 @media print {

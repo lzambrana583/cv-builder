@@ -22,7 +22,7 @@ export default function SingleColumnStack({
   sectionClass = "",
   coursesTitleKey = "cv.courses",
 }) {
-  const { t, show, opts } = model;
+  const { t, show } = model;
   const effectiveOrder = Array.isArray(order) && order.length ? order : model.sectionOrder;
 
   const coursesRenderer = (titleKey) => () =>
@@ -71,7 +71,7 @@ export default function SingleColumnStack({
         </ResumeSection>
       ) : null,
     references: () =>
-      show("references") && opts.showReferences && model.references.length ? (
+      show("references") && model.references.length ? (
         <ResumeSection title={t("cv.references")} className={sectionClass}>
           <ResumeReferences model={model} />
         </ResumeSection>

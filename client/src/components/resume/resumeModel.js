@@ -78,7 +78,6 @@ export function buildResumeModel(cv, languageOverride, templateOrder) {
       showPhoto: opt("showPhoto"),
       compact: opt("compactMode", false),
       skillBars: opt("showSkillBars"),
-      showReferences: opt("showReferences"),
       showBirthDate: opt("showBirthDate"),
       showNationality: opt("showNationality"),
       pageSize: s.pageSize || s.paperSize || "A4",

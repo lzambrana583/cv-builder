@@ -67,10 +67,11 @@
   margin: 0 0 9mm;
 }
 
+/* La sección del sidebar puede fluir entre páginas (llena la página 1 antes
+   de continuar). La protección de filas y encabezados vive en resume-base.css
+   y aplica a todas las plantillas. */
 .emt-side .rs-section {
   margin-bottom: 7.5mm;
-  break-inside: avoid;
-  page-break-inside: avoid;
 }
 
 .emt-side .rs-title {
@@ -226,8 +227,9 @@
 
 @media print {
   /* Franja verde repetida en cada página impresa (position: fixed se
-     repite por página), para que el sidebar no se corte cuando el
-     contenido termina a mitad de la última página. */
+     repite por página), para que el sidebar vaya a sangre completa y
+     continua entre páginas, incluso cuando el contenido termina a mitad
+     de la última página. */
   .emt::before {
     content: "";
     position: fixed;
